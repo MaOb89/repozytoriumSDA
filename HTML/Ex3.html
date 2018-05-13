@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+
+<body>
+
+    <header>
+        <strong>
+            <h1>FORMULARZ</h1>
+        </strong>
+    </header>
+
+    <body>
+        
+
+            <h2>formularz:</h2>
+
+
+            <form action="./Ex3.html" method="post">
+                <input name="imie" placeholder="imie" type="text">
+                <input name="nazwisko" placeholder="nazwisko" type="text">
+                <input name="haslo" placeholder="haslo" type="password">
+                <input type="submit" value="Submit">
+  
+
+                <hr>
+
+                <div>
+                    plec<br/>
+                    kobieta <input type="radio" name="plec" value="kobieta" checked>
+                    mezczyzna <input type="radio" name="plec" value="mezczyzna">
+                </div>
+
+
+                <hr>
+
+                <div>
+                    przedzial wiekowy
+                    <select name="wiek" title="wybierz przedzial">
+                        <option value="0-18">0-18</option>
+                        <option value="18-25">18-25</option>
+                        <option value="25-35">25-35</option>
+                        <option value="35-50">35-50</option>
+                        <option value="50-80">50-80</option>
+                    </select>
+                </div>
+
+                <input type="hidden" name="id" value="1">
+                <hr>
+
+                <hr>
+                <input type="submit" value="Submit">
+
+            </form>
+
+    </body>

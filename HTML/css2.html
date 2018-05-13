@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #poprzednik  .potomek
+        {
+            width:300px;
+            height: 50px;
+            background-color: black;
+            color: white
+
+        }
+
+        #rodzic > .dziecko
+        {
+            color:#FF00FF;
+            width: 350px;
+            height: 100px;
+            background-color: darkslateblue;
+        }
+
+        #ja + .brat
+        {
+            background-color: black;
+            color: red;
+        }
+
+        #jas ~ .rodzenstwo
+        {
+            background-color: black;
+            color: aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+<div id="potomkowie">
+    <div class="potomek">to nie jest potomek</div>
+    <div id="poprzednik">
+        <div>
+            <div class="potomek">potomek</div>
+        </div>
+
+        <div>
+            <div class="potomek">potomek</div>
+        </div>
+
+        <div>
+            <p>
+            <div class="potomek">potomek</div>
+            </p>
+        </div>
+
+    </div>
+</div>
+<div id="rodzic">
+    <div class="dziecko">dziecko</div>
+    <div>
+        <div class="dziecko">to nie jest dziecko</div>
+    </div>
+
+    <div class="dziecko">dziecko</div>
+</div>
+<div id="rodzina">
+    <div class="brat">Brat młodszy</div>
+    <div id="ja">Ja</div>
+    <div class="brat">bliźniak</div>
+    <div class="brat">Brat starszy</div>
+</div>
+
+<div class="rodzina">
+    <div class="rodzenstwo">brat</div>
+    <div id="jas">Ja</div>
+    <div class="rodzenstwo">rodznestwo</div>
+    <div class="rodzenstwo">rodznestwo</div>
+    <div class="rodzenstwo">rodznestwo</div>
+</div>
+
+</body>
+
+</html>
+

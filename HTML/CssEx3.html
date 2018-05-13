@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+
+<style>
+
+    #text, .text {
+        color: blue
+    }
+
+    .inside span {
+        color: blue
+    }
+
+ p[role="separator"]{
+     color: blue
+ }
+
+div .inner >p  {
+     color: blue
+ }
+
+
+</style>
+
+<div class="box">
+    <p>Nie zmieniaj mnie</p>
+    <p id="text">Zmień mój kolor!</p>
+    <p class="text">Zmień mój kolor!</p>
+    <div class="inside">
+        <span>Zmień mój kolor</span>
+        <p>Nie zmieniaj mnie!</p>
+    </div>
+</div>
+
+
+
+<div class="inner">
+    <p role="" class="paragraph">Nie zmieniaj mnie!</p>
+    <p role="separator">Zmień mój kolor</p>
+    <div class="inner">
+        <p>Zmień mój kolor</p>
+        <div>
+            <p>Nie zmieniaj mnie!</p>
+        </div>
+
+        <p class="paragraph">Zmień mój kolor</p>
+        <span class="paragraph">Nie zmieniaj mnie!</span>
+    </div>
+</div>
+
+
+
+</body>
+</html>
+
